@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Site — Dashboard</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script type="module" defer src="../shop.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <!-- Top bar -->
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <h1>My Site</h1>
+        </div>
+
+        <nav class="nav-tabs" aria-label="Primary">
+          <button class="tab active" type="button">All Collections</button>
+          <button class="tab" type="button">My Collections</button>
+          <button class="tab" type="button">Users</button>
+        </nav>
+
+        <div class="spacer"></div>
+
+        <div class="actions">
+          <div class="profile" role="button" aria-haspopup="menu" aria-expanded="false">
+            <div class="avatar">MU</div>
+            <span>My username</span>
+            <span aria-hidden="true">▾</span>
+          </div>
+          <button class="new-btn" type="button">+ NEW COLLECTION</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <main class="content">
+      <section class="toolbar" aria-label="Collection tools">
+        <div class="search">
+          <div class="icon">⌕</div>
+          <input type="search" placeholder="Search collections..." aria-label="Search collections" />
+        </div>
+
+        <div class="sort">
+          <span>Sort:</span>
+          <select aria-label="Sort collections">
+            <option selected>Most Recent</option>
+            <option>Last Updated</option>
+            <option>Title A–Z</option>
+            <option>Title Z–A</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="grid" aria-label="Collections">
+        <!-- Card template repeated -->
+        <!-- You can duplicate and change titles/tags as needed -->
+        <article class="card">
+          <div class="card-top">
+            <div class="card-icon">◇</div>
+            <div class="card-title">Title of Collection</div>
+          </div>
+
+          <div class="card-meta">
+            <span class="tag">TAG</span>
+            <span class="kv"><span class="dot"></span> CREATED: Today, at 2:09 PM</span>
+            <span class="kv"><span class="dot"></span> LAST UPDATED: Today, at 2:09 PM</span>
+          </div>
+
+          <div class="card-bottom">
+            <div class="count">
+              <div class="mini">★</div>
+              <span>0</span>
+            </div>
+            <div class="timestamp">
+              <span>Created Today</span>
+              <span>Updated Today</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <div class="card-icon">◇</div>
+            <div class="card-title">Title of Collection</div>
+          </div>
+          <div class="card-meta">
+            <span class="tag">TAG</span>
+            <span class="kv"><span class="dot"></span> CREATED: Today, at 2:09 PM</span>
+            <span class="kv"><span class="dot"></span> LAST UPDATED: Today, at 2:09 PM</span>
+          </div>
+          <div class="card-bottom">
+            <div class="count">
+              <div class="mini">★</div>
+              <span>0</span>
+            </div>
+            <div class="timestamp">
+              <span>Created Today</span>
+              <span>Updated Today</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <div class="card-icon">◇</div>
+            <div class="card-title">Title of Collection</div>
+          </div>
+          <div class="card-meta">
+            <span class="tag">TAG</span>
+            <span class="kv"><span class="dot"></span> CREATED: Today, at 2:09 PM</span>
+            <span class="kv"><span class="dot"></span> LAST UPDATED: Today, at 2:09 PM</span>
+          </div>
+          <div class="card-bottom">
+            <div class="count">
+              <div class="mini">★</div>
+              <span>0</span>
+            </div>
+            <div class="timestamp">
+              <span>Created Today</span>
+              <span>Updated Today</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <div class="card-icon">◇</div>
+            <div class="card-title">Title of Collection</div>
+          </div>
+          <div class="card-meta">
+            <span class="tag">TAG</span>
+            <span class="kv"><span class="dot"></span> CREATED: Today, at 2:09 PM</span>
+            <span class="kv"><span class="dot"></span> LAST UPDATED: Today, at 2:09 PM</span>
+          </div>
+          <div class="card-bottom">
+            <div class="count">
+              <div class="mini">★</div>
+              <span>0</span>
+            </div>
+            <div class="timestamp">
+              <span>Created Today</span>
+              <span>Updated Today</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
