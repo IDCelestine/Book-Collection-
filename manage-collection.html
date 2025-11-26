@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Manage Collection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/form.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header-left">
+        <div class="logo-box">
+          <span class="logo-text">My Site</span>
+        </div>
+        <h1 class="page-title" id="formTitle">Add Collection</h1>
+      </div>
+
+      <div class="header-right">
+        <nav class="guest-nav" id="guestNav">
+          <a href="register.html" class="nav-link">Sign up</a>
+          <a href="login.html" class="nav-link">Log in</a>
+        </nav>
+
+        <div class="user-menu" id="userMenu">
+          <div class="user-avatar">👤</div>
+          <button class="user-name-btn" id="userNameBtn">
+            <span id="userNameLabel">My username</span>
+            <span class="caret">▼</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main form-main">
+      <form id="collectionForm" class="form-card">
+        <div class="form-group">
+          <label for="title">Collection Title</label>
+          <input type="text" id="title" required />
+        </div>
+
+        <div class="form-group">
+          <label for="tag">Tag</label>
+          <input type="text" id="tag" placeholder="e.g. Books, Gadgets" />
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" rows="4"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" class="btn-secondary" id="cancelBtn">
+            Cancel
+          </button>
+          <button type="submit" class="btn-primary">
+            Save Collection
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="#">Footer Link 1</a>
+        <a href="#">Footer Link 2</a>
+      </div>
+      <div class="footer-links">
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Cookies</a>
+      </div>
+      <div class="footer-copy">
+        © 2025
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/manage-collection.js"></script>
+</body>
+</html>

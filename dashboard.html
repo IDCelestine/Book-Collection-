@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+  <div class="page">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-left">
+        <div class="logo-box">
+          <span class="logo-text">My Site</span>
+        </div>
+        <h1 class="page-title">Dashboard</h1>
+      </div>
+
+      <div class="header-right">
+        <!-- Guest links -->
+        <nav class="guest-nav" id="guestNav">
+          <a href="register.html" class="nav-link">Sign up</a>
+          <a href="login.html" class="nav-link">Log in</a>
+        </nav>
+
+        <!-- Logged in user menu -->
+        <div class="user-menu" id="userMenu">
+          <div class="user-avatar">👤</div>
+          <button class="user-name-btn" id="userNameBtn">
+            <span id="userNameLabel">My username</span>
+            <span class="caret">▼</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- TABS -->
+    <nav class="tabs">
+      <button class="tab active" data-tab="all">All Collections</button>
+      <button class="tab hidden-when-guest" data-tab="mine">My Collections</button>
+      <button class="tab hidden-when-guest" data-tab="users">Users</button>
+    </nav>
+
+    <!-- CONTROLS -->
+    <section class="controls">
+      <div class="search-wrapper">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search collections..."
+        />
+        <span class="search-icon">🔍</span>
+      </div>
+
+      <div class="controls-right">
+        <div class="sort-wrapper">
+          <label for="sortSelect" class="sort-label">Most Recent</label>
+          <select id="sortSelect">
+            <option value="recent">Most Recent</option>
+            <option value="oldest">Oldest</option>
+            <option value="az">A–Z</option>
+          </select>
+        </div>
+
+        <button
+          id="newCollectionBtn"
+          class="btn-primary hidden-when-guest"
+        >
+          + New Collection
+        </button>
+      </div>
+    </section>
+
+    <!-- MAIN GRID -->
+    <main class="main">
+      <div id="emptyState" class="empty-state hidden">
+        <p>No collections found.</p>
+      </div>
+
+      <section id="collectionGrid" class="collection-grid">
+        <!-- Cards inserted by JS -->
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="#">Footer Link 1</a>
+        <a href="#">Footer Link 2</a>
+      </div>
+      <div class="footer-links">
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Cookies</a>
+      </div>
+      <div class="footer-copy">
+        © 2025
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
