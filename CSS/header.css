@@ -1,0 +1,93 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.user-nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.user-nav a:hover {
+  text-decoration: underline;
+}
+
+.main-nav {
+  background: #eee;
+  padding: 0.5rem 2rem;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-nav li {
+  margin-right: 1.5rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: normal;
+}
+
+.main-nav li.active a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+
+This version ensures:
+- The main content is centered both vertically and horizontally.
+- The navigation tabs show a clear selected state.
+- The login/register links are aligned to the top right.
+- The layout is responsive and clean, ready for enhancement.
+Would you like me to help you add hover effects, mobile responsiveness, or convert this into a React/Vue component scaffold for your team?
+
+
